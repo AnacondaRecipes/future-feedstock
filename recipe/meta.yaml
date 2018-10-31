@@ -1,6 +1,6 @@
 {% set name = "future" %}
-{% set version = "0.16.0" %}
-{% set sha256 = "e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb" %}
+{% set version = "0.17.0" %}
+{% set sha256 = "eb6d4df04f1fb538c99f69c9a28b255d1ee4e825d479b9c62fc38c0cf38065a4" %}
 
 
 package:
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{PYTHON}} setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - futurize = libfuturize.main:main
